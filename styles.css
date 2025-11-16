@@ -1,0 +1,121 @@
+/* Neon Math Grid Background + Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #f0f0f0;
+  background: #050018;
+  background-image:
+    linear-gradient(#1a1a1a 1px, transparent 1px),
+    linear-gradient(90deg, #1a1a1a 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tagline { color: #ccc; }
+.top-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+/* Main Grid */
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Panels */
+.panel, .hero {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Buttons */
+.btn {
+  padding: .6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+}
+.primary { background: #8b3dff; }
+.ghost { border: 1px solid white; }
+
+/* Cards */
+.hero-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.card.small {
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Features */
+.features-grid { display: grid; gap: 1rem;}
+@media(min-width:600px){
+  .features-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+/* Tabs */
+.tabs input { display:none; }
+.tabs label {
+  background: #222;
+  padding: .5rem 1rem;
+  border-radius: 6px 6px 0 0;
+  margin-right: .3rem;
+  cursor:pointer;
+}
+.tab-panels { background: rgba(255,255,255,0.1); padding:1rem; }
+.panel-content { display:none; }
+#t1:checked ~ .tab-panels #c1,
+#t2:checked ~ .tab-panels #c2,
+#t3:checked ~ .tab-panels #c3 { display:block; }
+
+/* Accordion */
+details {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  margin-bottom: .5rem;
+  border-radius: 10px;
+}
+
+/* Form */
+.smart-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.smart-form fieldset {
+  border: 1px solid #aaa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.smart-form input, select, textarea {
+  width: 100%;
+  padding: .5rem;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Footer */
+.site-footer {
+  text-align:center;
+  padding:1rem;
+  color:#aaa;
+}

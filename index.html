@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CalcSphere — Interactive Calculus Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <svg class="logo" width="54" height="54" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="45" fill="url(#grad)"/>
+      <defs>
+        <linearGradient id="grad" x1="0" x2="1">
+          <stop offset="0%" stop-color="#00d0ff"/>
+          <stop offset="100%" stop-color="#8b3dff"/>
+        </linearGradient>
+      </defs>
+      <path d="M20 60 Q50 20 80 60" stroke="white" stroke-width="6" fill="none"/>
+    </svg>
+    <div>
+      <h1>CalcSphere</h1>
+      <p class="tagline">Explore calculus through interactive concepts</p>
+    </div>
+  </div>
+
+  <nav class="top-nav">
+    <a href="#features">Features</a>
+    <a href="#demo">Demo</a>
+    <a href="#signup">Join</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="grid-container">
+
+<section class="hero">
+  <h2>Master Calculus With Visual Power</h2>
+  <p class="lead">Derivatives, integrals, limits — all explained visually and intuitively.</p>
+
+  <div class="hero-actions">
+    <a class="btn primary" href="#signup">Start Learning</a>
+    <a class="btn ghost" href="#demo">View Demo</a>
+  </div>
+
+  <div class="hero-cards">
+    <article class="card small">
+      <h3>Graph Visuals</h3>
+      <p>See how calculus changes shapes & curves.</p>
+    </article>
+    <article class="card small">
+      <h3>Limit Explorer</h3>
+      <p>Understand approach behavior using guided visuals.</p>
+    </article>
+    <article class="card small">
+      <h3>Integral Blocks</h3>
+      <p>Area-under-curve representation made simple.</p>
+    </article>
+  </div>
+</section>
+
+<section class="panel" id="features">
+  <h2>Core Features</h2>
+  <div class="features-grid">
+    <article class="feature"><h3>Derivative Animator</h3><p>Watch slopes change in real-time.</p></article>
+    <article class="feature"><h3>Integral Builder</h3><p>Block-by-block accumulation visuals.</p></article>
+    <article class="feature"><h3>Limit Sandbox</h3><p>Approach values from both sides.</p></article>
+    <article class="feature"><h3>Function Library</h3><p>Explore trig, exponential & polynomial forms.</p></article>
+  </div>
+</section>
+
+<section class="panel" id="demo">
+  <h2>Demo (CSS Tabs)</h2>
+
+  <div class="tabs">
+    <input type="radio" name="tab" id="t1" checked>
+    <label for="t1">Derivatives</label>
+
+    <input type="radio" name="tab" id="t2">
+    <label for="t2">Integrals</label>
+
+    <input type="radio" name="tab" id="t3">
+    <label for="t3">Limits</label>
+
+    <div class="tab-panels">
+      <div class="panel-content" id="c1">
+        <p>Derivatives measure slope — visualize tangent lines on dynamic curves.</p>
+      </div>
+      <div class="panel-content" id="c2">
+        <p>Integrals accumulate area — see rectangles fill spaces under curves.</p>
+      </div>
+      <div class="panel-content" id="c3">
+        <p>Limits describe approaching behavior — observe values closing in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel" id="faq">
+  <h2>Quick FAQ</h2>
+  <div class="accordion">
+    <details><summary>Is this for beginners?</summary><p>Yes — concepts start simple and gradually increase difficulty.</p></details>
+    <details><summary>Do I need prior knowledge?</summary><p>No — CalcSphere teaches everything visually.</p></details>
+    <details><summary>Is this free?</summary><p>Basic tools are free — advanced modules require signup.</p></details>
+  </div>
+</section>
+
+<section class="panel" id="signup">
+  <h2>Join CalcSphere</h2>
+  <form class="smart-form">
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label>Name *</label>
+      <input type="text" required value="Ibrahim Zahid">
+      <label>Email *</label>
+      <input type="email" required value="l252556@lhr.nu.edu.pk">
+    </fieldset>
+
+    <fieldset>
+      <legend>Interests</legend>
+      <label class="fancy-checkbox"><input type="checkbox"> Derivatives</label>
+      <label class="fancy-checkbox"><input type="checkbox"> Integrals</label>
+      <label class="fancy-checkbox"><input type="checkbox"> Limits</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Level</legend>
+      <label class="fancy-radio"><input type="radio" name="lvl"> Beginner</label>
+      <label class="fancy-radio"><input type="radio" name="lvl"> Intermediate</label>
+    </fieldset>
+
+    <label>Region</label>
+    <select>
+      <option>Asia</option><option>Europe</option><option>Africa</option><option>America</option>
+    </select>
+
+    <label>Notes</label>
+    <textarea rows="5"></textarea>
+
+    <div class="form-actions">
+      <button class="btn primary" type="submit">Submit</button>
+      <button class="btn ghost" type="reset">Reset</button>
+    </div>
+  </form>
+</section>
+
+<section class="panel" id="about">
+  <h2>About Me</h2>
+  <p>My name is <strong>Ibrahim Zahid</strong>. I am a student of BS Data Science, currently pursuing my degree from FAST NUCES, Lahore. 
+     I am originally from Muzaffarabad but have been living in Lahore since 2005.</p>
+</section>
+
+<aside class="panel contact" id="contact">
+  <h2>Contact</h2>
+  <p>Email: <strong>l252556@lhr.nu.edu.pk</strong></p>
+</aside>
+
+</main>
+
+<footer class="site-footer">
+  <p>© CalcSphere</p>
+</footer>
+
+</body>
+</html>
